@@ -29,10 +29,10 @@ public class Student implements Serializable
 	
 	public void printAllData()
 	{
-		System.out.println("©m¦W¡G" + name);
-		System.out.println("°ê¤å¡G" + chinese);
-		System.out.println("­^¤å¡G" + english);
-		System.out.println("¼Æ¾Ç¡G" + math);
-		System.out.println("¥­§¡¡G" + avgScore());		
+		System.out.println("å§“åï¼š" + name);
+		System.out.println("åœ‹æ–‡ï¼š" + chinese);
+		System.out.println("è‹±æ–‡ï¼š" + english);
+		System.out.println("æ•¸å­¸ï¼š" + math);
+		System.out.println("å¹³å‡ï¼š" + avgScore());		
 	}
 }

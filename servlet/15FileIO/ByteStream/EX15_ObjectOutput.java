@@ -19,7 +19,7 @@ public class EX15_ObjectOutput
 		
 			obj.writeObject(t1);
 			obj.close();
-			System.out.println("¦¨¥\¼g¤JEX15.dat");
+			System.out.println("æˆåŠŸå¯«å…¥EX15.dat");
 		}
         catch (IOException ie){
 		

@@ -8,11 +8,11 @@ public class EX10_FileInOutStream
       FileInputStream fin=new FileInputStream("Xms.gif");
       FileOutputStream fout=new FileOutputStream("Xms_bak.gif"); 
            
-      System.out.println("file size="+fin.available()); //ÀÉ®×¤j¤p
+      System.out.println("file size="+fin.available()); //æª”æ¡ˆå¤§å°
       byte data[]=new byte[fin.available()];  
 
-      fin.read(data);      //±N¹ÏÀÉÅª¤Jdata°}¦C
-      fout.write(data);    //±Ndata°}¦C¸Ìªº¸ê®Æ¼g¤J·sÀÉ®×
+      fin.read(data);      //å°‡åœ–æª”è®€å…¥dataé™£åˆ—
+      fout.write(data);    //å°‡dataé™£åˆ—è£¡çš„è³‡æ–™å¯«å…¥æ–°æª”æ¡ˆ
       System.out.println("file copyed and renamed");
       
       fin.close();

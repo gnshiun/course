@@ -21,9 +21,9 @@ public class EX06_PrintWriter
            output.println();
            //output.print('\n');
         }
-        output.println("¦¨¥\¼g¤J");
+        output.println("æˆåŠŸå¯«å…¥");
         output.close();
         
-        System.out.println("¦¨¥\¼g¤JEX06.txt");
+        System.out.println("æˆåŠŸå¯«å…¥EX06.txt");
     }
 }

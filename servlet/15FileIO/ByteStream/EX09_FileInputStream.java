@@ -13,16 +13,16 @@ public class EX09_FileInputStream
 		int size;
 		FileInputStream file = new FileInputStream("EX09_FileInputStream.java");
 		
-		print("Á`¦ì¤¸²Õ¼Æ¡G" + (size = file.available()));//Åã¥Ü¦ì¤¸²ÕÁ`¼Æ
-		print("Åª¨ú " + size + " ¦ì¤¸²Õ....");	    //Åã¥ÜÅª¨úªº¦ì¤¸²Õ¼Æ
-		byte[] data = new byte[size];	            //«Å§i°O¾ĞÅé½w½Ä¾¹
+		print("ç¸½ä½å…ƒçµ„æ•¸ï¼š" + (size = file.available()));//é¡¯ç¤ºä½å…ƒçµ„ç¸½æ•¸
+		print("è®€å– " + size + " ä½å…ƒçµ„....");	    //é¡¯ç¤ºè®€å–çš„ä½å…ƒçµ„æ•¸
+		byte[] data = new byte[size];	            //å®£å‘Šè¨˜æ†¶é«”ç·©è¡å™¨
 		
-		if(file.read(data) != size)		            //­YÅª¨ú¸ê®Æ != size
+		if(file.read(data) != size)		            //è‹¥è®€å–è³‡æ–™ != size
 		{
-			print("¤£¯àÅª¨ú " + size + " ¦ì¤¸²Õ");	//Åã¥ÜÅª¨ú¤£¨¬°T®§
+			print("ä¸èƒ½è®€å– " + size + " ä½å…ƒçµ„");	//é¡¯ç¤ºè®€å–ä¸è¶³è¨Šæ¯
 		}	
 		
-		print(new String(data, 0, size));	        //Åã¥ÜÅª¨ú¸ê®Æ
+		print(new String(data, 0, size));	        //é¡¯ç¤ºè®€å–è³‡æ–™
 		file.close();
 	}
 }

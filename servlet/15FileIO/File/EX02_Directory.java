@@ -10,27 +10,27 @@ public class EX02_Directory
 	
 	public static void main(String[] args)
 	{
-		String path = "C:/Jdk1.8";	//©w¸q¤u§@¸ô®|
-		File file = new File(path);	//«Ø¥ßÀÉ®×Ãş§O
-        if(file.isDirectory())        //´ú¸Õ¬O§_¬°¥Ø¿ı
+		String path = "C:/Jdk1.8";	//å®šç¾©å·¥ä½œè·¯å¾‘
+		File file = new File(path);	//å»ºç«‹æª”æ¡ˆé¡åˆ¥
+        if(file.isDirectory())        //æ¸¬è©¦æ˜¯å¦ç‚ºç›®éŒ„
 		{	
-			print("ÀÉ®×¸ô®| " + path + "\n");	//Åã¥Ü¤u§@¸ô®|
-			String s[] = file.list();	//¨ú±o¥Ø¿ı¤¤ªº¦¨­û¸ê®Æ
+			print("æª”æ¡ˆè·¯å¾‘ " + path + "\n");	//é¡¯ç¤ºå·¥ä½œè·¯å¾‘
+			String s[] = file.list();	//å–å¾—ç›®éŒ„ä¸­çš„æˆå“¡è³‡æ–™
 			for(int i=0; i<s.length; i++)
 			{
-				File fn = new File(path + "/" + s[i]);	//«Ø¥ß¸ô®|»PÀÉ¦Wª«¥ó
-                if(fn.isDirectory())  //ÀË¬d¬O§_¬°¥Ø¿ı
+				File fn = new File(path + "/" + s[i]);	//å»ºç«‹è·¯å¾‘èˆ‡æª”åç‰©ä»¶
+                if(fn.isDirectory())  //æª¢æŸ¥æ˜¯å¦ç‚ºç›®éŒ„
 				{	
-					print(s[i] + " ¬O¥Ø¿ı\n");
+					print(s[i] + " æ˜¯ç›®éŒ„\n");
 				}
 				else
 				{
-					print(s[i] + " ¬OÀÉ®×\t");
+					print(s[i] + " æ˜¯æª”æ¡ˆ\t");
                     
-					print("ÀÉ®×¤j¤p¡G" + new File(path + "/" + s[i]).length() + "Bytes\n");
+					print("æª”æ¡ˆå¤§å°ï¼š" + new File(path + "/" + s[i]).length() + "Bytes\n");
 				}
 			}
 		}
-		System.out.println("µL¦¹¥Ø¿ı!");
+		System.out.println("ç„¡æ­¤ç›®éŒ„!");
 	}
 }

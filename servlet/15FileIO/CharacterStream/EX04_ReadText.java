@@ -22,7 +22,7 @@ public class EX04_ReadText
         }
         else
         {
-           System.out.println("ÀÉ®×[ " + name + " ]¤£¦s¦b!");
+           System.out.println("æª”æ¡ˆ[ " + name + " ]ä¸å­˜åœ¨!");
         }  
     }
 }

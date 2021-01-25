@@ -11,15 +11,15 @@ public class EX11_DataInputStream
         int unit;
         double price;
         StringBuffer item;
-        System.out.println("ÀÉ®×¸ô®|: " + name.getAbsolutePath());
-        //«Ø¥ßDataInputStreamªº¿é¤J¦ê¬yª«¥ó
+        System.out.println("æª”æ¡ˆè·¯å¾‘: " + name.getAbsolutePath());
+        //å»ºç«‹DataInputStreamçš„è¼¸å…¥ä¸²æµç‰©ä»¶
         DataInputStream input = new DataInputStream(
                                     new FileInputStream(name));
         try
         {                         
            while (true)
            {
-              //Åª¨ú¸ê®Æ
+              //è®€å–è³‡æ–™
               unit = input.readInt();
               input.readChar();
               price = input.readDouble();
@@ -29,15 +29,15 @@ public class EX11_DataInputStream
               {
                   item.append(ch);
               }    
-              System.out.println("¼Æ¶q: " + unit);
-              System.out.println("³æ»ù: " + price);
-              System.out.println("¦WºÙ: " + item);
+              System.out.println("æ•¸é‡: " + unit);
+              System.out.println("å–®åƒ¹: " + price);
+              System.out.println("åç¨±: " + item);
               System.out.println();
            }  
         }
         catch(EOFException e)
         {
-           input.close();          //Ãö³¬¦ê¬y
+           input.close();          //é—œé–‰ä¸²æµ
         }
     }
 }

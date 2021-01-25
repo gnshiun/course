@@ -13,7 +13,7 @@ public class EX07_FileOutputStream
         String aphorism = "You will never win, if you never begin.";
         byte[] data = aphorism.getBytes();	
 			           
-        System.out.println("¥¿¦b¼g¤JÀÉ®×...EX07.txt");
+        System.out.println("æ­£åœ¨å¯«å…¥æª”æ¡ˆ...EX07.txt");
         
         OutputStream file1 = new FileOutputStream("EX07.txt");	      
 		for(int i=0; i<data.length; i++)

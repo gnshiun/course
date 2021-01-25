@@ -11,9 +11,9 @@ public class EX03_WriteText
         FileWriter output = new FileWriter(file);            
         /* BufferedWriter output = new BufferedWriter(
                                       new FileWriter(file)); */
-        System.out.println("¥¿¦b¼g¤JÀÉ®×..." + file);
+        System.out.println("æ­£åœ¨å¯«å…¥æª”æ¡ˆ..." + file);
         output.write(str1);
-        //output.newLine();   //´«¦C
+        //output.newLine();   //æ›åˆ—
         output.write(str2);
         //output.newLine();
         output.write(str1,3,8);

@@ -9,11 +9,11 @@ public class EX06_2_InputStr
 		BufferedReader keyin = new BufferedReader(
 			                             new InputStreamReader(System.in));
         
-		System.out.print("©m¦W: ");
+		System.out.print("å§“å: ");
 		name = keyin.readLine();
 			
 		System.out.println();	
-		System.out.println("§A¿é¤Jªº©m¦W¬O: " + name + '\n');
+		System.out.println("ä½ è¼¸å…¥çš„å§“åæ˜¯: " + name + '\n');
 
 	}
 }

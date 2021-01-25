@@ -9,9 +9,9 @@ public class EX05_Systemout
                                     new OutputStreamWriter(System.out));
                       
         String str = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        output.write(str);       //øÈ•X¶r¶Í
+        output.write(str);       //Ëº∏Âá∫Â≠ó‰∏≤
         //output.write(str,3,10);
         output.newLine();
-        output.close();          //√ˆ≥¨¶Í¨y
+        output.close();          //ÈóúÈñâ‰∏≤ÊµÅ
     }
 }

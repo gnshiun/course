@@ -7,26 +7,26 @@ public class EX12_DataOutputStream
     {
         String file = "EX12.txt";
         
-        //4µ§3Äæ
+        //4ç­†3æ¬„
         int[] units = {2,12,1,10};
         double[] prices = {580.0,150.0,50.0,80.0};
-        String[] items = {"Java SE","Pen","ª½¤Ø","Apple"};
+        String[] items = {"Java SE","Pen","ç›´å°º","Apple"};
         
-	    //«Ø¥ßDataOutputStreamªº¿é¥X¦ê¬yª«¥ó
+	    //å»ºç«‹DataOutputStreamçš„è¼¸å‡ºä¸²æµç‰©ä»¶
         DataOutputStream output = new DataOutputStream(
                                       new FileOutputStream(file));
                                       
-        System.out.println("¥¿¦b¼g¤JÀÉ®×..." + file);
+        System.out.println("æ­£åœ¨å¯«å…¥æª”æ¡ˆ..." + file);
         
         for( int i = 0; i < 4; i++)
         {
-           output.writeInt(units[i]);   //¼g¤J¸ê®Æ
+           output.writeInt(units[i]);   //å¯«å…¥è³‡æ–™
  
            output.writeDouble(prices[i]);
 
            output.writeInt(items[i].length());
            output.writeChars(items[i]);
         }
-        output.close();                //Ãö³¬¦ê¬y
+        output.close();                //é—œé–‰ä¸²æµ
     }
 }

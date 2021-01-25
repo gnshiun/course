@@ -12,17 +12,17 @@ public class EX01_FileMethod
 	{
 		File file = new File("C:\Java\Work\Ex801_FileMethod.java");
 		
-		myPrint("ÀÉ®×¦WºÙ¡G" + file.getName() + "\n");	     //¨ú±oÀÉ®×¦WºÙ
-		//myPrint("ÀÉ®×¸ô®|¡G" + file.getPath() + "\n");	     //¨ú±oÀÉ®×¸ô®|
-		myPrint("µ´¹ï¸ô®|¡G" + file.getAbsolutePath() + "\n"); //¨ú±oµ´¹ï¸ô®|
-		myPrint("¥Ø¿ı¦ì¸m¡G" + file.getParent() + "\n");	     //¨ú±o¤W¼h¥Ø¿ı¦WºÙ
-		myPrint("ÀÉ®×¤j¤p¡G" + file.length() + " bytes\n");	 //¨ú±oÀÉ®×¤j¤p
-		myPrint("³Ì«á­×§ï¡G" + file.lastModified() + "\n");	 //¨ú±o³Ì«á­×§ï®É¶¡
-		myPrint("¬O§_¦s¦b¡G");
-		myPrint(file.exists() ? "¦s¦b\n" : "¤£¦s¦b\n");	     //ÀË¬d¬O§_¦s¦b
-		myPrint("¥i§_Åª¨ú¡G");
-		myPrint(file.canRead() ? "¥iÅª¨ú\n" : "¤£¥iÅª\n");	 //ÀË¬d¬O§_¥iÅª¨ú
-		myPrint("¥i§_¼g¤J¡G");
-		myPrint(file.canWrite() ? "¥i¼g¤J\n" : "¤£¥i¼g\n");	 //ÀË¬d¬O§_¥i¼g¤J
+		myPrint("æª”æ¡ˆåç¨±ï¼š" + file.getName() + "\n");	     //å–å¾—æª”æ¡ˆåç¨±
+		//myPrint("æª”æ¡ˆè·¯å¾‘ï¼š" + file.getPath() + "\n");	     //å–å¾—æª”æ¡ˆè·¯å¾‘
+		myPrint("çµ•å°è·¯å¾‘ï¼š" + file.getAbsolutePath() + "\n"); //å–å¾—çµ•å°è·¯å¾‘
+		myPrint("ç›®éŒ„ä½ç½®ï¼š" + file.getParent() + "\n");	     //å–å¾—ä¸Šå±¤ç›®éŒ„åç¨±
+		myPrint("æª”æ¡ˆå¤§å°ï¼š" + file.length() + " bytes\n");	 //å–å¾—æª”æ¡ˆå¤§å°
+		myPrint("æœ€å¾Œä¿®æ”¹ï¼š" + file.lastModified() + "\n");	 //å–å¾—æœ€å¾Œä¿®æ”¹æ™‚é–“
+		myPrint("æ˜¯å¦å­˜åœ¨ï¼š");
+		myPrint(file.exists() ? "å­˜åœ¨\n" : "ä¸å­˜åœ¨\n");	     //æª¢æŸ¥æ˜¯å¦å­˜åœ¨
+		myPrint("å¯å¦è®€å–ï¼š");
+		myPrint(file.canRead() ? "å¯è®€å–\n" : "ä¸å¯è®€\n");	 //æª¢æŸ¥æ˜¯å¦å¯è®€å–
+		myPrint("å¯å¦å¯«å…¥ï¼š");
+		myPrint(file.canWrite() ? "å¯å¯«å…¥\n" : "ä¸å¯å¯«\n");	 //æª¢æŸ¥æ˜¯å¦å¯å¯«å…¥
 	}
 }

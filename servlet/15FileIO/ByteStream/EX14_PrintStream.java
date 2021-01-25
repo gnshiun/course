@@ -17,7 +17,7 @@ public class EX14_PrintStream
         output.println("1+2+...+100=" + sum);
         output.printf("1+2+...+100=%d",sum); 
         //output.println("1+2+...+100=" + sum);
-        System.out.println("¦¨¥\¼g¤JEX14.txt");
+        System.out.println("æˆåŠŸå¯«å…¥EX14.txt");
         output.close();
     }
 }             
